@@ -31,7 +31,7 @@ let losAngelesElement = document.querySelector("#los-angeles");
   }
   
   function updateCity(event) {
-    if(cityTimeZone === "current"){
+    if (cityTimeZone === "current"){
       cityTimeZone = moment().tz.guess();
     }
     let cityTimeZone = event.target.value;
