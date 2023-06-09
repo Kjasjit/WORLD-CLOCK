@@ -1,6 +1,8 @@
 body{
-    background-color: #f9f7fe;
     font-family: sans-serif;
+    background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/stylized-alarm-clock-on-a-yellow-and-pink-background-gualtiero-boffi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{

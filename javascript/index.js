@@ -47,6 +47,42 @@ function updateTime() {
     );
   }
 
+  let berlinElement = document.querySelector("#berlin");
+  if (berlinElement) {
+    let berlinDateElement = tokyoElement.querySelector(".date");
+    let berlinTimeElement = tokyoElement.querySelector(".time");
+    let berlinTime = moment().tz("Europe/Berlin");
+
+    berlinDateElement.innerHTML = berlinTime.format("MMMM	Do YYYY");
+    berlinTimeElement.innerHTML = berlinTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+ 
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
+
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM	Do YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  let punjabElement = document.querySelector("#punjab");
+  if (punjabElement) {
+    let punjabDateElement = punjabElement.querySelector(".date");
+    let punjabTimeElement = punjabElement.querySelector(".time");
+    let punjabTime = moment().tz("Asia/Punjab");
+
+    punjabDateElement.innerHTML = punjabTime.format("MMMM	Do YYYY");
+    punjabTimeElement.innerHTML = punjabTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
 
 }
 
