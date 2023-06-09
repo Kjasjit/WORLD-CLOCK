@@ -11,14 +11,14 @@ function updateTime() {
     );
   }
 
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  let turinElement = document.querySelector("#turin");
+  if (turinElement) {
+    let turinDateElement = turinElement.querySelector(".date");
+    let turinTimeElement = turinElement.querySelector(".time");
+    let turinTime = moment().tz("Europe/Turin");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    turinDateElement.innerHTML = turinTime.format("MMMM	Do YYYY");
+    turinTimeElement.innerHTML = turinTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
