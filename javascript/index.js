@@ -48,6 +48,7 @@ let losAngelesElement = document.querySelector("#los-angeles");
       "A"
     )}</small></div>
     </div>
+    <a href="/">All cities</a>
     `;
   }
 
