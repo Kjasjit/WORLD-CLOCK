@@ -49,8 +49,8 @@ function updateTime() {
 
   let berlinElement = document.querySelector("#berlin");
   if (berlinElement) {
-    let berlinDateElement = tokyoElement.querySelector(".date");
-    let berlinTimeElement = tokyoElement.querySelector(".time");
+    let berlinDateElement = berlinElement.querySelector(".date");
+    let berlinTimeElement = berlinElement.querySelector(".time");
     let berlinTime = moment().tz("Europe/Berlin");
 
     berlinDateElement.innerHTML = berlinTime.format("MMMM	Do YYYY");
@@ -71,14 +71,14 @@ function updateTime() {
     );
   }
 
-  let punjabElement = document.querySelector("#punjab");
+  let dubaiElement = document.querySelector("#dubai");
   if (punjabElement) {
-    let punjabDateElement = punjabElement.querySelector(".date");
-    let punjabTimeElement = punjabElement.querySelector(".time");
-    let punjabTime = moment().tz("Asia/Punjab");
+    let dubaiDateElement = dubaiElement.querySelector(".date");
+    let dubaiTimeElement = dubaiElement.querySelector(".time");
+    let dubaiTime = moment().tz("Asia/Dubai");
 
-    punjabDateElement.innerHTML = punjabTime.format("MMMM	Do YYYY");
-    punjabTimeElement.innerHTML = punjabTime.format(
+    dubaiDateElement.innerHTML = dubaiTime.format("MMMM	Do YYYY");
+    dubaiTimeElement.innerHTML = dubaiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
