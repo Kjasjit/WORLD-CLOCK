@@ -25,9 +25,9 @@ select{
 }
 
 .container{
-    max-width: 600px;
+    max-width: 500px;
     margin: 60px auto;
-    background: white;
+    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
     padding: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
