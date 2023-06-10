@@ -72,7 +72,7 @@ function updateTime() {
   }
 
   let dubaiElement = document.querySelector("#dubai");
-  if (punjabElement) {
+  if (dubaiElement) {
     let dubaiDateElement = dubaiElement.querySelector(".date");
     let dubaiTimeElement = dubaiElement.querySelector(".time");
     let dubaiTime = moment().tz("Asia/Dubai");
